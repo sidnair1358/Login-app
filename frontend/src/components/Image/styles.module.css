@@ -1,0 +1,12 @@
+.image_container {
+  width: 100%;
+  max-width: 370px; /* Adjust max-width as needed */
+  height: auto;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
