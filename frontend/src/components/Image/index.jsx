@@ -1,14 +1,9 @@
 import React from "react";
+import styles from "./styles.module.css";
 
 const Image = ({ path, altText }) => {
   return (
-    <div
-      style={{
-        display: "flex",
-        width: "auto",
-        height: "auto",
-      }}
-    >
+    <div className={styles.container}>
       <img src={path} alt={altText} />
     </div>
   );
