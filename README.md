@@ -29,7 +29,7 @@ The app is a monorepo separated into frontend and backend directories. The backe
 
 ##### App Functionality (Backend)
 
-1. The backend is quite simple but it covers the requirements on the spec. It has two post request for registering and logging in. It has a get request to get all the users in the database. The get request is used by the frontend on the homepage, to display all the users added to the DB to visually represent what's happening in the backend.
+1. The backend is quite simple. It has two post requests for registering and logging in, respectively. It has a get request to get all the users in the database. The get request is used by the frontend on the homepage, to display all the users added to the DB to visually represent what's happening in the backend.
 2. All requests send appropriate errors and statuses e.g. a user who already has an account cannot register again and we get a status 409 and an error message saying the user is already registered. A user is not allowed to register or log in without filling in all fields. A user who is not registered is not allowed to log in. A user with the wrong password is not allowed to log in.
 3. Basic password encryption has been implemented using the bcrypt library during sign up. A password check is done while logging in using the same library. The password is hashed, a salt generated and added to the hashed password.
 4. Added some basic unit tests for api routes.
@@ -43,8 +43,3 @@ The app is a monorepo separated into frontend and backend directories. The backe
 5. CSS transitions have been used on all components to allow for smooth transition between pages. The design is clean and minimal allowing for easy navigation.
 6. I have used a few react-bootstrap components to style the homepage.
 7. Error states are cleared between pages.
-
-###### Stretch goals
-
-1. Responsive pages
-2. Implement JWT
