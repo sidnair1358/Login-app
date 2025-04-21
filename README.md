@@ -37,7 +37,7 @@ The app is a monorepo separated into frontend and backend directories. The backe
 ##### App Functionality (Fronend)
 
 1. There are three routes set up - Register, Login and Home page.
-2. Redux used for state management as per spec.
+2. Redux used for state management.
 3. I've used Formik and Yup for form validation. It checks for valid emails and if the password and confirm password values match. Passwords need to be at least 6 characters long. This is quite basic and validation can be improved. I kept this simple with a view of getting an MVP ready.
 4. The Login page sends a request to the API to check if a user exists in the database. If the user doesn't exist an error message is displayed. If successfull, the user is taken to the homepage where the user is greeted and the list of all users in the database is displayed in a tabular form. There is a link to logout which redirects the user to the login page.
 5. CSS transitions have been used on all components to allow for smooth transition between pages. The design is clean and minimal allowing for easy navigation.
